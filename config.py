@@ -11,7 +11,7 @@ if os.path.exists("local.env"):
 load_dotenv()
 admins = {}
 
-SESSION_NAME = getenv("SESSION_NAME")
+SESSION_NAME = getenv("SESSION_NAME", "1BVtsOKIBu0_EUN5Bu6yRbG3xfd_uW3GGYkhMq5LNZKZlbhNo8ySV9f0wzAy4raZVG_hiXWSFojjvek_rvH5awuX9LxXek9tlpf2FDPOU6vlCae187XcPjeolQ4WtA0fH-tP9l6BoCkP9K6Peq21W1ldOEiGQHMqy6flQ40cIIEGO0FXAT2Xo5T1B7Z-IWJsyPxmeRIybLu5p3lOjqtwvMjHmAiBl_L1lNeH4Wlm8Ar-x96_Mv5kiVkCLOo2kb_C_0g9VdK3JG3xtXDOqUDxmVyigd6MAxk6WxG5yaWuk5gC3H9XHJcEmTT4p2FpFpdHG8Fjr5CRonZiZeMIOqij-q6DmyW_bFhw=")
 
 if str(getenv("STRING_SESSION2")).strip() == "":
     SESSION2 = str(None)
@@ -33,13 +33,13 @@ if str(getenv("STRING_SESSION5")).strip() == "":
 else:
     SESSION5 = str(getenv("STRING_SESSION5"))
 
-BOT_TOKEN = getenv("BOT_TOKEN", "")
-BOT_NAME = getenv("BOT_NAME", "Umk")
+BOT_TOKEN = getenv("BOT_TOKEN", "5989285521:AAGVEzM2lQmV43vvWqdU7SyBxSUQkXgmkg8")
+BOT_NAME = getenv("BOT_NAME", "vpnfastt2_bot")
 
-API_ID = int(getenv("API_ID", "8186557"))
-API_HASH = getenv("API_HASH", "efd77b34c69c164ce158037ff5a0d117")
+API_ID = int(getenv("API_ID", "29309374"))
+API_HASH = getenv("API_HASH", "be6f2df3b11f218a84c946c93421722e")
 MONGO_DB_URL = getenv("MONGO_DB_URL", "mongodb+srv://Cloner:Cloner@cluster0.cgc6t.mongodb.net/?retryWrites=true&w=majority")
-OWNER_NAME = getenv("OWNER_NAME", "Zaid")
+OWNER_NAME = getenv("OWNER_NAME", "")
 OWNER_USERNAME = getenv("OWNER_USERNAME", "Timesisnotwaiting")
 ALIVE_NAME = getenv("ALIVE_NAME", "Zaid")
 BOT_USERNAME = getenv("BOT_USERNAME", "Zaid2_Robot")
